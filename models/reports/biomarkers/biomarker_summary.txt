@@ -1,0 +1,13 @@
+======================================================================
+BIOMARKER DISCOVERY SUMMARY
+======================================================================
+
+Total features screened: 9
+Significant biomarkers found: 1
+P-value threshold: 0.05
+Fold-change threshold (log2): 1.0
+
+Top 10 biomarkers by p-value:
+----------------------------------------------------------------------
+Biomarker      P-Value  Fold-Change     Log2FC
+  mitoses 1.439063e-32          0.0 -19.931569

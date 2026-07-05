@@ -1,0 +1,45 @@
+project:
+  name: "GeneExpressionDiseaseClassifier"
+  version: "1.0.0"
+  disease: "Breast Cancer"
+
+dataset:
+  name: "Breast Cancer Wisconsin (UCI)"
+  source: "UCI"
+  label_column: "class"
+  random_state: 42
+
+preprocessing:
+  missing_threshold: 0.20
+  variance_threshold: 0.01
+  log_transform: true
+  normalization: "quantile"
+  test_size: 0.20
+  random_state: 42
+
+feature_selection:
+  top_k_anova: 10
+  top_k_mutual_info: 10
+  top_k_rf: 10
+  final_top_k: 10
+
+ml:
+  random_state: 42
+  cv_folds: 5
+  scoring: "roc_auc"
+
+biomarker:
+  p_threshold: 0.05
+  fc_threshold: 1.0
+
+paths:
+  data_raw: "data/raw"
+  data_processed: "data/processed"
+  models: "models"
+  reports: "reports"
+  assets: "assets"
+  logs: "logs"
+
+logging:
+  level: "INFO"
+  file: "logs/pipeline.log"

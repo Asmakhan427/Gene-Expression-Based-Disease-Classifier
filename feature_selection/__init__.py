@@ -1,0 +1,6 @@
+"""
+Feature selection module.
+"""
+from .selector import run_feature_selection
+
+__all__ = ['run_feature_selection']
